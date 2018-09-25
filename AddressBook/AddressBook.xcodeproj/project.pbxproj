@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		477E2C27215344BE002C8073 /* SortingSolution.m in Sources */ = {isa = PBXBuildFile; fileRef = 477E2C26215344BE002C8073 /* SortingSolution.m */; };
 		47DD61052140C16A001E24F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DD61042140C16A001E24F2 /* AppDelegate.m */; };
 		47DD61082140C16A001E24F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DD61072140C16A001E24F2 /* ViewController.m */; };
 		47DD610B2140C16A001E24F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47DD61092140C16A001E24F2 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		47DD61132140C172001E24F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DD61122140C172001E24F2 /* main.m */; };
 		47DD611D2140C172001E24F2 /* AddressBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DD611C2140C172001E24F2 /* AddressBookTests.m */; };
 		47DD61282140C172001E24F2 /* AddressBookUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DD61272140C172001E24F2 /* AddressBookUITests.m */; };
+		47DD61372140D433001E24F2 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DD61362140D433001E24F2 /* ResultViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		477E2C25215344BE002C8073 /* SortingSolution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortingSolution.h; sourceTree = "<group>"; };
+		477E2C26215344BE002C8073 /* SortingSolution.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortingSolution.m; sourceTree = "<group>"; };
 		47DD61002140C16A001E24F2 /* AddressBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddressBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47DD61032140C16A001E24F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		47DD61042140C16A001E24F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		47DD61232140C172001E24F2 /* AddressBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AddressBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47DD61272140C172001E24F2 /* AddressBookUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressBookUITests.m; sourceTree = "<group>"; };
 		47DD61292140C172001E24F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47DD61352140D433001E24F2 /* ResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
+		47DD61362140D433001E24F2 /* ResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,10 @@
 				47DD610E2140C172001E24F2 /* LaunchScreen.storyboard */,
 				47DD61112140C172001E24F2 /* Info.plist */,
 				47DD61122140C172001E24F2 /* main.m */,
+				47DD61352140D433001E24F2 /* ResultViewController.h */,
+				47DD61362140D433001E24F2 /* ResultViewController.m */,
+				477E2C25215344BE002C8073 /* SortingSolution.h */,
+				477E2C26215344BE002C8073 /* SortingSolution.m */,
 			);
 			path = AddressBook;
 			sourceTree = "<group>";
@@ -265,6 +275,8 @@
 				47DD61082140C16A001E24F2 /* ViewController.m in Sources */,
 				47DD61132140C172001E24F2 /* main.m in Sources */,
 				47DD61052140C16A001E24F2 /* AppDelegate.m in Sources */,
+				47DD61372140D433001E24F2 /* ResultViewController.m in Sources */,
+				477E2C27215344BE002C8073 /* SortingSolution.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +445,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZZ8TP539QY;
 				INFOPLIST_FILE = AddressBook/Info.plist;
@@ -443,6 +456,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yfkj.com.AddressBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -451,6 +466,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZZ8TP539QY;
 				INFOPLIST_FILE = AddressBook/Info.plist;
@@ -461,6 +477,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yfkj.com.AddressBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
